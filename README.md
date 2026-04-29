@@ -23,18 +23,17 @@ This project is a **local** Model Context Protocol (MCP) server that transforms 
 
 ### 2. Installation
 
-Clone the repository to your local machine. You don't need to manually install dependencies; the server script will automatically create a virtual environment and install everything required on its first run.
+Install the extension directly via the Gemini CLI:
 
 ```bash
-git clone https://github.com/dekwan/gemini-cli-lightshow.git
-cd gemini-cli-lightshow
+gemini extensions install https://github.com/dekwan/gemini-cli-lightshow
 ```
 
 ### 3. Configuration & Authentication
 
 The Gemini CLI Lightshow MCP requires access to the Gemini model for audio and lyric analysis. You can authenticate using **either** a Gemini API Key (easier setup) **or** Google Cloud Vertex AI.
 
-Create a `.env` file in the `server/` directory (or the root directory) with your Philips Hue credentials and ONE of the authentication methods below.
+Create a `.env` file in the `~/.gemini/extensions/lightshow/server/` directory (or the root directory) with your Philips Hue credentials and ONE of the authentication methods below.
 
 ```env
 # Philips Hue Configuration (Required)
@@ -83,7 +82,7 @@ gcloud auth application-default login
 
 ### 4. Adding Music
 
-The server scans for audio files in the directory where you launch the Gemini CLI.
+The server scans for audio files in the directory where you launch Gemini CLI.
 
 1. **Add MP3s:** Place your `.mp3` files in the directory where you plan to run the `gemini` command.
 2. **(Optional) Organize with `songs.json`:** 
@@ -96,13 +95,7 @@ This server communicates over `stdio`, making it compatible with any MCP client.
 
 ### Run via Gemini CLI
 
-This project is structured as a Gemini CLI extension. You can install it by pointing to this directory:
-
-```bash
-gemini extensions link /path/to/gemini-cli-lightshow
-```
-
-Once installed, you can use the following tools in your Gemini CLI session:
+Once installed via `gemini extensions install`, you can use the following tools in your Gemini CLI session:
 
 - `mcp_lightshow_list_songs`: Shows available `.mp3` tracks.
 - `mcp_lightshow_play_music`: Plays a song (by number or path) with synchronized lighting.
@@ -128,14 +121,6 @@ Add the following to your client's MCP configuration:
 ```
 
 *Note: Replace `/absolute/path/to/...` with the actual path to your cloned repository.*
-
-### Run Manually
-
-You can also run the server directly for testing:
-
-```bash
-python server/server.py
-```
 
 ## Credits
 
