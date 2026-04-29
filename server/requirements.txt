@@ -1,0 +1,7 @@
+librosa
+mcp
+numpy
+pygame-ce
+python-dotenv
+requests
+google-genai

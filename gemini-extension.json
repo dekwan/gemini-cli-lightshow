@@ -1,0 +1,16 @@
+{
+  "name": "lightshow",
+  "version": "1.0.0",
+  "description": "Lightshow",
+  "mcpServers": {
+    "lightshow": {
+      "command": "bash",
+      "args": [
+        "${extensionPath}${/}server${/}start_server.sh"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+      }
+    }
+  }
+}

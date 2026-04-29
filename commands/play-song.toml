@@ -1,0 +1,4 @@
+description = "Analyzes the song then plays the song with a lightshow."
+prompt = """
+Use the `play_music` tool from the lightshow MCP to play the song {{args}}.
+"""

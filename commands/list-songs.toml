@@ -1,0 +1,4 @@
+description = "Lists the songs available for the lightshow."
+prompt = """
+Use the `list_songs` tool from the lightshow MCP to list the songs available. Do not display the list of songs in your text response because the tool output already provides it. Keep your response brief.
+"""

@@ -1,0 +1,8 @@
+description = "Turn on the lights with the Gemini CLI logo gradient."
+prompt = """
+# Task: Turn on the lights to the Gemini CLI logo gradient
+
+You are an expert lighting coordinator. You are tasked to turn on the lights using the Gemini CLI logo gradient.
+
+Use `turn_on` from the lightshow MCP to set the gradient.
+"""

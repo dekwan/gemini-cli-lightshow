@@ -1,0 +1,8 @@
+description = "Set the light to a specific color or ??."
+prompt = """
+# Task: Turn on the lights to a certain color
+
+You are an expert color matcher. You are tasked to set the color of the lightstrip. Determine the best hue to set the lightstrip to based on the provided argument {{args}}.
+
+Use `set_color` from the lightshow MCP to set the color of the lightstrip to color you have determined.
+"""

@@ -1,0 +1,8 @@
+description = "Turn off all lights."
+prompt = """
+# Task: Turn off the lights
+
+You are an expert lighting coordinator. You are tasked to turn off all the lights.
+
+Use `turn_off` from the lightshow MCP to turn off the lights and reset the system.
+"""

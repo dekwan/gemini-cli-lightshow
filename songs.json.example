@@ -1,0 +1,4 @@
+[
+    {"genre": "Pop", "name": "Example Song 1", "file": "Example_Song_1.mp3"},
+    {"genre": "Rock", "name": "Example Song 2", "file": "Example_Song_2.mp3"}
+]
